@@ -1,0 +1,33 @@
+{
+    "name":        "helthe/mandrill",
+    "type":        "library",
+    "description": "Helthe Mandrill Component",
+    "keywords":    ["email", "mandrill", "mandrill api"],
+    "homepage":    "https://helthe.co",
+    "license":     "MIT",
+    "authors": [
+        {
+            "name": "Carl Alexander",
+            "email": "carlalexander@helthe.co"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "guzzlehttp/guzzle": "~4.0",
+        "symfony/serializer": "~2.3"
+    },
+    "require-dev": {
+        "symfony/templating": "~2.3"
+    },
+    "suggest": {
+        "symfony/templating": "Required for sending emails using the Symfony Templating Component"
+    },
+    "autoload": {
+        "psr-4": { "Helthe\\Component\\Mandrill\\": "" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
