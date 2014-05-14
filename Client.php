@@ -27,7 +27,7 @@ class Client implements ClientInterface
      *
      * @var string
      */
-    private $apiKey;
+    protected $apiKey;
 
     /**
      * Guzzle client.
