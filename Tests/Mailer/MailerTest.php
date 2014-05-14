@@ -27,7 +27,6 @@ class MailerTest extends \PHPUnit_Framework_TestCase
                ->method('sendMessage')
                ->with($this->equalTo($message));
 
-
         $mailer = new Mailer($client);
 
         $mailer->sendMessage('foo@bar.com', 'bar@foo.com', 'Foo Bar', 'some content');
