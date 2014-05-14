@@ -76,13 +76,11 @@ class Message implements NormalizableInterface
 
         $this->setSender($sender);
 
-        if (is_string($recipients) || $recipients instanceof Recipient) {
-            $this->addRecipient($recipients);
-        } elseif (is_array($recipients)) {
-            array_walk($recipients, array($this, 'addRecipient'));
-        } elseif (!$recipients instanceof Recipient) {
-            throw new \InvalidArgumentException('$recipients must be a string, an instance of Recipient or an array of valid recipients.');
+        if (!is_array($recipients)) {
+            $recipients = array($recipients);
         }
+
+        array_walk($recipients, array($this, 'addRecipient'));
     }
 
     /**
