@@ -60,7 +60,7 @@ $client->sendMessage(new Message('recipient@email.com', 'sender@email.com');
 ### Mailer
 
 The mailer classes are design to hide internal workings of the library and offer a standard
-interface for sending messages. The package offers to mailer classes for you to use.
+interface for sending messages. The package offers two mailer classes for you to use.
 
 #### Mailer
 
