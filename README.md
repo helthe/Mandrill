@@ -18,7 +18,7 @@ Add the following in your `composer.json`:
 {
     "require": {
         // ...
-        "helthe/mandrill": "~1.0"
+        "helthe/mandrill": "dev-master"
     }
 }
 ```
@@ -26,7 +26,7 @@ Add the following in your `composer.json`:
 #### Using the command line
 
 ```bash
-$ composer require 'helthe/mandrill=~1.0'
+$ composer require 'helthe/mandrill=dev-master'
 ```
 
 ## Usage
